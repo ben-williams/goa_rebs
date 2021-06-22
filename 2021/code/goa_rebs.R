@@ -48,10 +48,11 @@ weight_at_age(year, admb_home, rec_age, region = "goa")
 fish_age_comp(year, fishery = "fsh1", rec_age, plus_age)
 ts_age_comp(year, area = "goa", rec_age, plus_age)
 
-
 fish_length_comp(year, fishery = "fsh1", rec_age, lenbins = "len_bin_labels.csv")
 ts_length_comp(year, area = "goa", lenbins = "len_bin_labels.csv")
 lls_length_comp(year, species = "REBS", region = "goa", lenbins = "len_bin_labels.csv")
+
+# create .dat file - this will be placed in a folder that uses the model name
 
 concat_dat(year = year, species = "REBS", region = "goa", 
            model = "db", dat_name = "goa_rebs_2019", 
